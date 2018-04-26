@@ -36,4 +36,4 @@ if (currentDate.day === 28 && currentDate.month === 4) {
   message = yesVariations[Math.floor(Math.random() * yesVariations.length)]
 }
 
-document.getElementById('edBallsMotherfucker').innerHTML = `${message}.`
+document.getElementById('ballsHolder').innerHTML = `${message}.`
