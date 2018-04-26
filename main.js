@@ -3,10 +3,37 @@ const currentDate = {
   month: new Date().getMonth() + 1
 }
 
-const message = "NO."
+const noVariations = [
+  "no",
+  "uh-uh",
+  "nix",
+  "nope",
+  "nay",
+  "nah",
+  "negative",
+  "no siree",
+  "not likely",
+  "'fraid not"
+]
+
+const yesVariations = [
+  "yes",
+  "yea",
+  "affirmative",
+  "aye aye",
+  "uh-huh",
+  "yup",
+  "ja",
+  "sure is",
+  "fo' shizzle",
+  "sure",
+  "yessir"
+]
+
+let message = noVariations[Math.floor(Math.random() * noVariations.length)]
 
 if (currentDate.day === 28 && currentDate.month === 4) {
-  message = "YES."
+  message = yesVariations[Math.floor(Math.random() * yesVariations.length)]
 }
 
-document.getElementById('edBallsMotherfucker').innerHTML = message
+document.getElementById('edBallsMotherfucker').innerHTML = `${message}.`
